@@ -1,0 +1,23 @@
+.a{
+    background-color:dodgerblue;
+    color:white;
+    text-decoration: underline;
+    }
+.b{
+    margin-right: 150px;
+    }
+.c{
+    margin-left: 50px;
+    }
+ .d{
+    margin-left: 170px;
+    }
+ .e{
+    background-size: cover;
+    height:75vh;
+    width:90vw;
+    padding:50px;
+    }
+.f{
+    padding:20px;
+    }

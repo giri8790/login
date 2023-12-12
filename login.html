@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <center>
+       <style>
+          .center-form{
+              justify-content: center;
+              width:600px;
+              height: auto;
+              font-size:  20px;;
+              margin: 0 auto;
+              border: 3px solid blue;
+              padding: 30px;
+              background-color: rgb(178, 236, 158);
+           }
+       </style>
+  </head>
+<body>
+      <h1 style="color:blue;"> LOGIN</h1>
+      <p><b>Please fill in this for Login</b></p>
+</center>
+    <div class="center-form">
+      <form action="sucess.html" name="myform" onsubmit="return validateform()" method="get">
+        <label for="nam"><b>User name:</b></label>
+        <input type="text" id="nam" name="nam" value=""><br><br>
+       
+       <label for="pwd"><b>Password</b>:</label>
+       <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+       <center><input type="submit" value="Register" name="myform"></center><br>
+       <center><input type="reset" name="reset" value="Reset"></center>
+    </div>
+   </form>
+<script>
+    function validateform(){  
+       var name=document.myform.nam.value;  
+       var password=document.myform.pwd.value;  
+       if(name==""){  
+          alert("Name can't be blank");  
+          return false;  
+       }
+       else if(password.length<6){  
+            alert("Password must be at least 6 characters long.");  
+            return false;  
+       }  
+    }
+ </script>
+</body>
+</html>
